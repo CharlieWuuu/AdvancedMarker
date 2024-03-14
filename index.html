@@ -5,19 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Advanced Marker 測試網頁</title>
     </head>
+    <style lang="scss">
+        * {
+            box-shadow: inset 0 0 1px black;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            nav {
+                max-width: 150px;
+                ol {
+                    li {
+                        margin-top: 12px;
+                        /* text-wrap: nowrap; */
+                        font-size: 14px;
+                    }
+                }
+            }
+            main {
+                width: 100%;
+                display: flex;
+                .GoogleMap {
+                    width: 100%;
+                    height: 100%;
+                    background-color: lightblue;
+                }
+            }
+        }
+    </style>
     <body>
-        <p>1. 引入 cdn</p>
-        <p>2. 寫初始化地圖的程式</p>
-        <p>3. 初始化地圖、排版地圖</p>
-        <p>4. 找公開資源，點位非常多的那種</p>
-        <p>5. 種 Marker</p>
-        <p>6. 第二章地圖換成不同方法</p>
-        <p>7. 在程式埋計時器，測試不同地圖的載入速度</p>
-        <p>8. 測試進階 Marker 的樣式功能</p>
-        <p>9. 測試進階 Marker 的 3D 功能</p>
-        <p>10. 測試用 mapId 更換地圖樣式</p>
-        <p>11. 尋找有哪些功能會被 mapId 影響</p>
-        <div id="map1" style="width: 100px; height: 100px; border: 1px solid black">地圖一</div>
-        <div id="map2" style="width: 100px; height: 100px; border: 1px solid black">地圖二</div>
+        <nav>
+            <ol>
+                <li>引入 cdn</li>
+                <li>寫初始化地圖的程式</li>
+                <li>初始化地圖、排版地圖</li>
+                <li>找公開資源，點位非常多的那種</li>
+                <li>種 Marker</li>
+                <li>第二章地圖換成不同方法</li>
+                <li>在程式埋計時器，測試不同地圖的載入速度</li>
+                <li>測試進階 Marker 的樣式功能</li>
+                <li>測試進階 Marker 的 3D 功能</li>
+                <li>測試用 mapId 更換地圖樣式</li>
+                <li>尋找有哪些功能會被 mapId 影響</li>
+            </ol>
+        </nav>
+        <main>
+            <div class="GoogleMap" id="map1">地圖一</div>
+            <div class="GoogleMap" id="map2">地圖二</div>
+        </main>
     </body>
 </html>
